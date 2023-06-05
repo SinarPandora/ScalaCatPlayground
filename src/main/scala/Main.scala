@@ -6,12 +6,10 @@ import cats.effect.{IO, IOApp}
 import sttp.capabilities
 import sttp.capabilities.fs2.Fs2Streams
 import sttp.client3.*
-import sttp.client3.circe.*
 import sttp.client3.httpclient.fs2.HttpClientFs2Backend
 import io.circe.*
 import io.circe.generic.auto.*
 import io.circe.parser.*
-import io.circe.syntax.*
 import scala.util.chaining.*
 
 object Main extends IOApp.Simple:
