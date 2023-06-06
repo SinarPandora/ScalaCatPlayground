@@ -12,7 +12,7 @@ import io.circe.generic.auto.*
 import io.circe.parser.*
 import scala.util.chaining.*
 
-object Main extends IOApp.Simple:
+object CE3 extends IOApp.Simple:
   protected type Backend = SttpBackend[IO, Fs2Streams[IO] with capabilities.WebSockets]
 
   case class TODO(userId: Long, id: Long, title: String, completed: Boolean)
